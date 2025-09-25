@@ -1,0 +1,38 @@
+progam pseudocode
+
+    1. define physical parameters (masses, spring constants)
+       m1 = m2 = m = #
+       k1 = k2 = k3 = k = #
+    2. define initial conditions (positions, velocities)
+       x1 = #
+       x2 = #
+       x1_dot = #
+       x2_dot = #
+    3. define time parameters (start time, end time, time step)
+       to = 0
+       tf = #
+       dt = 0.00001?
+       number of time steps? total time/dt
+    4. solve the ODE using:
+        - euler's method (explicit)
+        - runge-kutta 4 method
+        - scipy integrator (for comparison)
+
+    5. store the time evolution of the system (positions and velocities)
+
+    6. at each time step, calculate the total energy of the system:
+        - use kinetic and potential energy expressions
+
+    7. use numerical integration methods to compute the total energy over time:
+        - riemann sum
+        - trapezoidal rule
+        - simpson's rule
+        - compare to scipy’s quad or simps
+
+    8. plot results:
+        - position vs. time
+        - energy vs. time
+        - energy integral vs. method
+
+    9. output results to screen or file
+
