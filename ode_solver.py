@@ -60,13 +60,13 @@ def calc_v1v2(m1, m2, k1, k2, k3):
 
     eigvals, eigvecs = eigh(K, M)
 
-    # Sort eigenvalues and corresponding eigenvectors
+    # sort eigenvalues and corresponding eigenvectors
     i = eigvals.argsort()
     eigvecs = eigvecs[:, i]
 
-    # Normalize eigenvectors
-    v1 = eigvecs[:, 0] / eigvecs[0, 0]
-    v2 = eigvecs[:, 1] / eigvecs[0, 1]
+    # normalize eigenvectors
+    v1 = eigvecs[:, 0] / np.linalg.norm(eigvecs[:, 0])
+    v2 = eigvecs[:, 1] / np.linalg.norm(eigvecs[:, 1])
 
     return v1, v2
 

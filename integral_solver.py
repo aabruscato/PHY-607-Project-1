@@ -7,14 +7,14 @@ def calc_energy(y, m1, m2, k1, k2, k3):
 
     KE = 0.5 * m1 * v1**2 + 0.5 * m2 * v2**2
 
-    # Potential energy from springs
+    # potential energy from springs
     PE1 = 0.5 * k1 * x1**2
     PE2 = 0.5 * k2 * (x2 - x1)**2
     PE3 = 0.5 * k3 * x2**2
 
     PE = PE1 + PE2 + PE3
 
-    E = T + U
+    E = KE + PE
     return E
 
 def riemann_sum(t, f):
